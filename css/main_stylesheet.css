@@ -387,6 +387,10 @@ footer {
     .logo-div {
         margin: 0;
     }
+    
+    .logo-div img {
+        margin-top: 10px;
+    }
 
     .title-text {
         top: 45%;
