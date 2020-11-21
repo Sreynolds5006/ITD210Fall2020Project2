@@ -20,6 +20,18 @@ body {
     background-size: 100%, cover;
 }
 
+.header-shadow {
+    background-image: url("./imgs/header-btm-shdw.png"), url("./imgs/headerImg.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center bottom, center;
+    background-size: 100%, cover;
+}
+
+.ham {
+    display: none;
+}
+
 nav {
     width: 100%;
     height: 70px;
@@ -264,6 +276,35 @@ nav {
     margin: 0;
 }
 
+
+/* --------------- FIND US DIV/white version --------------- */
+
+
+.find-us-div-wht {
+    background-image: url("./imgs/whitebtm.png"), url("./imgs/findusbg.png");
+    height: 480px;
+    background-repeat: no-repeat;
+    background-position: center top, center;
+    background-size: 100%, cover;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    color: #b8656f;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.find-us-div-wht h2 {
+    font-size: 72px;
+    color: #b8656f;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
 footer {
     background-color: #b8656f;
     display: flex;
@@ -322,6 +363,7 @@ footer {
 
 /* --------------- MEDIA QUERIES --------------- */
 
+
 @media screen and (max-width:1290px) {
     .product-div {
         flex-wrap: wrap;
@@ -341,8 +383,6 @@ footer {
         width: 400px;
     }
 
-
-
     .pic-div {
         flex-wrap: wrap;
         padding: 60px 0;
@@ -352,45 +392,10 @@ footer {
         width: 40%;
         padding: 0 2px;
     }
-
-
-
-
 }
 
 
 @media screen and (max-width:960px) {
-    nav {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .navigation {
-        padding: 20px 0;
-        width: auto;
-        text-align: center;
-    }
-
-    .nav-items {
-        display: block;
-    }
-
-    .nav-items li {
-        padding: 10px 0;
-        width: auto;
-    }
-
-    .nav-items li:not(:last-child) {
-        border-bottom: 1px solid #ccc;
-    }
-
-    .logo-div {
-        margin: 0;
-    }
-    
-    .logo-div img {
-        margin-top: 10px;
-    }
 
     .title-text {
         top: 45%;
@@ -407,6 +412,73 @@ footer {
 
     }
 
+/* --------------- HAMBURGER MENU --------------- */
+
+    .ham {
+        display: block;
+        position: absolute;
+        z-index: 1000;
+        top: 20px;
+        right: 80px;
+        width: 36px;
+        height: 36px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        background-image: url("./imgs/ham_icon.png");
+        background-size: 100%;
+    }
+
+    .showClose {
+        background-image: url("./imgs/ham_icon.png");
+    }
+
+    .navigation {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #b8656f;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        color: white;
+        /* hide the menu above the screen by default */
+        transform: translateY(-100%);
+        /* transition adds a little animation when sliding in and out the menu */
+        transition: transform 0.2s ease;
+      }
+      
+      
+      .showNav {
+        /* show the menu */
+        transform: translateY(0);
+      }
+      
+      /* basic nav styling below */
+      
+      .navigation ul {
+        /* width: 100%; */
+        height: 100%;
+        list-style: none;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      
+      .navigation ul li a {
+        color: white;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #f99b4c;
+        text-decoration: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2rem;
+      }
+      
+      .navigation ul li a:hover, .navbar ul li a:focus {
+        border-bottom: 2px solid white;
+      }
+
 }
 
 @media screen and (max-width:960px) {
@@ -418,4 +490,14 @@ footer {
         padding: 20px 0;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    .ham {
+        right: 20px;
+    }
+
+    .logo-div {
+        margin-left: 20px;
+    }
 }

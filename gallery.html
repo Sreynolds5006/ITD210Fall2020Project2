@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Twisted Banana</title>
+
+    <link rel="stylesheet" href="css/main_stylesheet.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/gallery-stylesheet.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header-shadow">
+            <nav>
+                <div class="logo-div">
+                    <img src="imgs/twisted banana logo 2.svg">
+                </div>
+                <button class="ham"></button>
+                <div class="navigation">
+                    <ul class="nav-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">Location</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="title-text"><h1>The Twisted Banana</h1></div>
+        </div>
+
+        <!-------------- end of header -------------->
+        <div class="gallery-wrapper">
+            <div class="gallery-h2"><h2>Gallery</h2></div>
+        
+            <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 5</div>
+                <img src="imgs/gallery-01.png" style="width:100%">
+
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 5</div>
+                <img src="imgs/gallery-02.png" style="width:100%">
+
+            </div>
+            
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="imgs/gallery-03.png" style="width:100%">
+
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 5</div>
+                <img src="imgs/gallery-04.png" style="width:100%">
+
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="imgs/gallery-05.png" style="width:100%">
+
+            </div>
+        
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span> 
+            </div>
+        </div>
+
+
+        <!-------------- start of footer -------------->
+        <div class="find-us-div-wht">
+            <h2>Find our truck</h2>
+            <p>We move locations daily. Check out our Instagram or Facebook pages to find us this week.</p>
+        </div>
+        
+        <footer>
+            <div class="footer-content">
+                <div class="contact us">
+                    <div class="contact-top">
+                        <span class="footer-contacth">Contact Us:</span><br><br>
+                        <span class="phone">(xxx) xxx-xxxx</span> <span class="email">contact@email.com</span></div>
+                    <div class="contact-btm"><img src="imgs/facebook.png"><img src="imgs/instagram.png"></div>
+                </div>
+
+                <div class="footer-navigation">
+                    <ul class="footer-nav-items">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="#">Location</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/hamjs.js"></script>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+</div>
+
+
+</body>
+</html>
