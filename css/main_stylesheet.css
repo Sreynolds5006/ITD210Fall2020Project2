@@ -13,7 +13,7 @@ body {
 /* --------------- HEADER --------------- */
 
 .header {
-    background-image: url("../imgs/header-btm.png"), url("../imgs/headerImg.png");
+    background-image: url("./imgs/header-btm.png"), url("./imgs/headerImg.png");
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center bottom, center;
@@ -22,7 +22,7 @@ body {
 }
 
 .header-shadow {
-    background-image: url("../imgs/header-btm-shdw.png"), url("../imgs/headerImg.png");
+    background-image: url("./imgs/header-btm-shdw.png"), url("./imgs/headerImg.png");
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center bottom, center;
@@ -105,7 +105,7 @@ nav {
 /* --------------- DIV 2 --------------- */
 
 .description-div {
-    background-image: url("../imgs/orangetop.png");
+    background-image: url("./imgs/orangetop.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100%;
@@ -179,7 +179,7 @@ nav {
 /* --------------- ABOUT DIV --------------- */
 
 .about-div {
-    background-image: url("../imgs/orangebtm.png"), url("../imgs/orangetop.png"), url("../imgs/about-div.png");
+    background-image: url("./imgs/orangebtm.png"), url("./imgs/orangetop.png"), url("./imgs/about-div.png");
     height: 800px;
     background-repeat: no-repeat;
     background-position: center top, center bottom, center;
@@ -253,7 +253,7 @@ nav {
 /* --------------- FIND US DIV --------------- */
 
 .find-us-div {
-    background-image: url("../imgs/orangebtm.png"), url("../imgs/findusbg.png");
+    background-image: url("./imgs/orangebtm.png"), url("./imgs/findusbg.png");
     height: 480px;
     background-repeat: no-repeat;
     background-position: center top, center;
@@ -282,7 +282,7 @@ nav {
 
 
 .find-us-div-wht {
-    background-image: url("../imgs/whitebtm.png"), url("../imgs/findusbg.png");
+    background-image: url("./imgs/whitebtm.png"), url("./imgs/findusbg.png");
     height: 480px;
     background-repeat: no-repeat;
     background-position: center top, center;
@@ -426,12 +426,12 @@ footer {
         border: none;
         cursor: pointer;
         background-color: transparent;
-        background-image: url("../imgs/ham_icon.png");
+        background-image: url("./imgs/ham_icon.png");
         background-size: 100%;
     }
 
     .showClose {
-        background-image: url("../imgs/ham_icon.png");
+        background-image: url("./imgs/ham_icon.png");
     }
 
     .navigation {
