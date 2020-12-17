@@ -13,15 +13,16 @@ body {
 /* --------------- HEADER --------------- */
 
 .header {
-    background-image: url("./imgs/header-btm.png"), url("./imgs/headerImg.png");
+    background-image: url("../imgs/header-btm.png"), url("../imgs/headerImg.png");
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center bottom, center;
     background-size: 100%, cover;
+    z-index: 999;
 }
 
 .header-shadow {
-    background-image: url("./imgs/header-btm-shdw.png"), url("./imgs/headerImg.png");
+    background-image: url("../imgs/header-btm-shdw.png"), url("../imgs/headerImg.png");
     height: 100vh;
     background-repeat: no-repeat;
     background-position: center bottom, center;
@@ -53,16 +54,16 @@ nav {
 .logo-div {
     min-width: 100px;
     min-height: 100px;
-    width: 140px;
+    width: 200px;
     margin-left: 80px;
     background-color: #f2c929;
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.75);
-    padding: 0 10px;
+    padding: 40px 10px;
 }
 
 .logo-div img {
-    width: 100%;
-    margin-top: 70px;
+    width: 110%;
+    margin: 50% auto 0;
 }
 
 .nav-items {
@@ -104,7 +105,7 @@ nav {
 /* --------------- DIV 2 --------------- */
 
 .description-div {
-    background-image: url("./imgs/orangetop.png");
+    background-image: url("../imgs/orangetop.png");
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: 100%;
@@ -178,7 +179,7 @@ nav {
 /* --------------- ABOUT DIV --------------- */
 
 .about-div {
-    background-image: url("./imgs/orangebtm.png"), url("./imgs/orangetop.png"), url("./imgs/about-div.png");
+    background-image: url("../imgs/orangebtm.png"), url("../imgs/orangetop.png"), url("../imgs/about-div.png");
     height: 800px;
     background-repeat: no-repeat;
     background-position: center top, center bottom, center;
@@ -252,7 +253,7 @@ nav {
 /* --------------- FIND US DIV --------------- */
 
 .find-us-div {
-    background-image: url("./imgs/orangebtm.png"), url("./imgs/findusbg.png");
+    background-image: url("../imgs/orangebtm.png"), url("../imgs/findusbg.png");
     height: 480px;
     background-repeat: no-repeat;
     background-position: center top, center;
@@ -281,7 +282,7 @@ nav {
 
 
 .find-us-div-wht {
-    background-image: url("./imgs/whitebtm.png"), url("./imgs/findusbg.png");
+    background-image: url("../imgs/whitebtm.png"), url("../imgs/findusbg.png");
     height: 480px;
     background-repeat: no-repeat;
     background-position: center top, center;
@@ -425,12 +426,12 @@ footer {
         border: none;
         cursor: pointer;
         background-color: transparent;
-        background-image: url("./imgs/ham_icon.png");
+        background-image: url("../imgs/ham_icon.png");
         background-size: 100%;
     }
 
     .showClose {
-        background-image: url("./imgs/ham_icon.png");
+        background-image: url("../imgs/ham_icon.png");
     }
 
     .navigation {

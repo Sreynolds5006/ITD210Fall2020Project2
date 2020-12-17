@@ -1,0 +1,153 @@
+.about-tb-wrapper {
+    background-image:url("../imgs/orangetop.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 100%, 100%;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 120px 100px;
+    justify-content: center;
+    min-height: 800px;
+    position: relative;
+}
+
+
+.about-tb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 30%;
+    background-color: #60742c;
+    padding: 20px 10px;
+    border-radius: 5px;
+    color: #fff;
+    position: absolute;
+    top: 24%;
+    left: 20%;
+    z-index: 990;
+}
+
+.about-tb-wrapper h3, .about-o-wrapper h3 {
+    font-size: 34px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.about-tb hr {
+    border: 1px solid white;
+    margin: 10px auto;
+    padding: 0;
+    width: 95%;
+}
+
+.about-tb-content, .about-o-content {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 10px;
+    font-family: 16px;
+    letter-spacing: .7px;
+    line-height: 1.5;
+}
+
+.about-tb-img {
+    position: absolute;
+    top: 12%;
+    right: 20%;
+}
+
+.about-o-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 800px;
+    background-color: #f99b4c;
+    padding: 0 80px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-o {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+    background-color: #b8656f;
+    border-radius: 5px;
+    padding: 20px 10px;
+    color: #fff;
+    position: absolute;
+    top: 24%;
+    right: 20%;
+    z-index: 990;
+}
+
+.about-o hr {
+    border: 1px solid white;
+    margin: 10px auto;
+    padding: 0;
+    width: 95%;
+}
+
+.about-o-img {
+    position: absolute;
+    top: 12%;
+    left: 20%;
+}
+
+
+
+
+
+
+/* --------------- MEDIA QUERIES --------------- */
+
+@media screen and (max-width:1538px) {
+    .about-tb {
+        min-width: 40%;
+    }
+    .about-o {
+        min-width: 40%;
+    }
+}
+
+@media screen and (max-width:1208px) {
+    .about-tb {
+        min-width: 40%;
+        min-height: 40%;
+    }
+    .about-o {
+        min-width: 40%;
+        min-height: 40%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-tb-wrapper, .about-o-wrapper {
+        min-height: initial;
+        width: auto;
+        height: auto;
+        padding: 80px;
+    }
+
+    .about-tb {
+        position:initial;
+        min-width: 100%;
+    }
+    .about-o {
+        position:initial;
+        min-width: 100%;
+    }
+
+    .about-tb-img {
+        display: none;
+    }
+    
+    .about-o-img {
+        display: none;
+    }
+}
